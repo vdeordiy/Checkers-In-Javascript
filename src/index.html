@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      canvas {
+        background-color: transparent;
+        cursor: url("./cursor.png"), pointer;
+      }
+
+      #board-image,
+      #pieces-image {
+        display: none;
+      }
+
+      #top-message {
+        font-family: "Press Start 2P", sans-serif;
+        font-weight: bold;
+        font-size: 1.5em;
+        -webkit-text-stroke: 0.45px;
+        -webkit-text-fill-color: #98645b;
+        -webkit-text-stroke-color: #544247;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="board-image"
+      src=".\pixelCheckers _v1.0\boards\board_plain_05.png"
+      alt="checkers board"
+    />
+    <img
+      id="pieces-image"
+      src=".\pixelCheckers _v1.0\checkers_topDown Wood_v.png"
+      alt=""
+    />
+
+    <p id="top-message"></p>
+    <canvas> </canvas>
+  </body>
+</html>
